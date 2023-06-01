@@ -14,3 +14,14 @@ class Solution(object):
                 break
         # return common prefix in string form
         return "".join(prefix) 
+        # while doing this problem i was thinking how to find consecutive prefixes anywhere in the string and came up with this
+        '''prefix = []
+        for i, char in enumerate(strs[0]):
+            # Check if all other strings have the same character at index i
+            if all(string[i] == char for string in strs[1:]):
+                prefix.append(char)
+            else:
+                break
+
+        # Return consecutive prefix in string form
+        return "".join(prefix)'''
